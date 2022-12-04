@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>signin</title>
+    <style>
+        body
+        {
+            margin:0;
+            padding:0;
+            background: url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHw%3D&w=1000&q=80);
+            background-position: center;
+            background-size: cover;
+            text-align: right;
+            font-family: sans-serif;
+            
+        }
+
+        .loginbox
+        {
+            width: 320px;
+            height:420px;
+            background:white;
+            color:black;
+            top:50%;
+            left:50%;
+            position:absolute;
+            transform:translate(-50%,-50%);
+            box-sizing: border-box;
+            border:2px;
+            border-style: double;
+            border-color: black;
+            border-radius: 20px;
+            text-align: center;
+            padding:20px 20px;
+        }
+        .loginbox p
+        {
+            margin:0;
+            padding:0;
+            font-weight: bold;
+        }
+        .loginbox input{
+            width:150px;
+            margin-bottom: 20px;
+        }
+        .loginbox input[type="text"],input[type="text"],input[type="password"]
+        {
+            border:none;
+            border-bottom: 1px solid black;
+            background:transparent;
+            outline: none;
+            height:40px;
+            color:black;
+            font-size:16px;
+        }
+
+       
+        .loginbox input[type="Submit"]
+        {
+            border:none;
+            outline: none;
+            height:40px;
+            background:cornflowerblue;
+            color:#fff;
+            border-radius: 20px;
+            
+
+        }
+        .loginbox a{
+            text-decoration:none;
+            font-size:12px;
+            line-height:20px;
+            color:black;
+        }
+        .loginbox a:hover{
+            color:green;
+        }
+        h1
+        {
+            margin:0;
+            padding:0 0 20px;
+            text-align: center;
+            font-size:22px;
+
+        }
+    </style>
+    </head>
+    <body>
+        <div>
+        <div class="loginbox">
+            <h1>signin!</h1>
+            <form  action="/signinsubmit" method="GET">
+                
+                <p>Email</p><br>
+                <input type="text" name="Email"><br><br>
+                <p>Password</p><br>
+                <input type="password" name="password"><br><br>
+                <input type="Submit" value="signin"><br><br>
+               
+            </form>
+        </div>
+    </div>
+    </body>
+    </html>
